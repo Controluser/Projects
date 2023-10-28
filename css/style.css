@@ -1,0 +1,195 @@
+:root {
+  --yellow: #ffc54d;
+  --red: crimson;
+  --green: #53bf9d;
+  --white: whitesmoke;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h2 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing {
+  background: url("/media/background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: var(--white);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--yellow);
+  font-weight: bold;
+  min-width: 120px;
+}
+
+header h2 {
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  margin-top: 0.5em;
+  flex-wrap: wrap;
+  row-gap: 1em;
+}
+
+#logo {
+  flex: 3;
+  font-size: 1.25em;
+  min-width: 260px;
+}
+
+nav {
+  flex: 2;
+  display: flex;
+}
+
+nav a {
+  flex: 1;
+}
+
+nav a:nth-child(1) {
+  text-align: center;
+}
+
+nav a:hover {
+  color: var(--green);
+}
+
+.maintext {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: center;
+  padding: 2em;
+}
+
+.tagline1 {
+  color: var(--red);
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.tagline2 {
+  color: var(--yellow);
+}
+
+.maintext div {
+  margin-top: 0.75em;
+}
+
+.maintext button {
+  width: 200px;
+  margin-top: 2em;
+  border-radius: 10px;
+  padding: 0.7em;
+  background-color: var(--green);
+  color: var(--white);
+  border: 1px solid var(--green);
+  cursor: pointer;
+}
+
+.maintext button:hover {
+  background: rgba(83, 191, 157, 0.85);
+  border-color: rgba(83, 191, 157, 0.85);
+}
+
+.menu {
+  display: grid;
+  background: linear-gradient(to right, rgb(100, 100, 100), rgb(53, 52, 52));
+  color: var(--white);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+#menuheading,
+#locheading {
+  background: linear-gradient(to right, rgb(100, 100, 100), rgb(53, 52, 52));
+  color: var(--yellow);
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 0.25em;
+}
+
+.menu th {
+  color: var(--red);
+  font-size: 1.8em;
+}
+
+table {
+  width: 100%;
+  padding: 1em;
+}
+
+.menu tr {
+  display: flex;
+  margin-top: 0.8em;
+  justify-content: center;
+}
+
+.menu td:nth-child(1) {
+  justify-self: left;
+  flex: 1;
+}
+
+.menu td:nth-child(2) {
+  justify-self: right;
+}
+
+.maincourse {
+  grid-row: span 2;
+}
+
+.locations {
+  background: linear-gradient(to right, rgb(100, 100, 100), rgb(53, 52, 52));
+  color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.locations h2 {
+  color: var(--red);
+}
+
+.locations div {
+  flex: 1;
+  padding: 1em;
+  min-width: 310px;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(55, 55, 55);
+  color: var(--white);
+  padding: 1.5em 1em;
+}
+
+footer div {
+  text-align: center;
+}
+
+header h2 i,
+nav i {
+  margin-right: 0.5em;
+}
+
+.fa-brands {
+  margin: 0 0.3em 0 0.3em;
+  transition: 0.5s;
+}
+
+
+@media (max-width: 540px) {
+  nav a:nth-child(1) {
+    text-align: left;
+  }
+}
